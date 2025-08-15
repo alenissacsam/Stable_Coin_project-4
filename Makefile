@@ -9,9 +9,7 @@ install:
 
 deploy-monad:
 	forge script script/DeployDSC.s.sol:DeployDSC --broadcast \
-    --rpc-url ${MONAD_RPC_URL} --private-key ${PRIVATE_KEY_MAIN} \
-    --verify --verifier sourcify --verifier-url https://sourcify-api-monad.blockvision.org \
-    -vvv
+    --rpc-url ${MONAD_RPC_URL} --private-key ${PRIVATE_KEY_MAIN} 
 
 deploy-nexus:
 	forge script script/DeployDSC.s.sol:DeployDSC --broadcast \
